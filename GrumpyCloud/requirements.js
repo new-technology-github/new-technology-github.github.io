@@ -223,11 +223,6 @@
             opcode: 'isDownloaded',
             blockType: Scratch.BlockType.BOOLEAN,
             text: 'is this project downloaded'
-          },
-          {
-            opcode: 'isFirstTimePlaying',
-            blockType: Scratch.BlockType.BOOLEAN,
-            text: 'is it the first time you play this game'
           }
         ]
       };
@@ -247,15 +242,6 @@
       } else {
         return false;
       }
-    }
-    isFirstTimePlaying (){
-        if (localStorage.firsttimeplayinggame != false){
-            return true;
-            var localStorage.firsttimeplayinggame = false;
-        } else {
-            return false;
-        }
-        
     }
     getBrowser () {
       return jscd.browser;
